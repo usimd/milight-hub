@@ -51,3 +51,6 @@ esphome/.esphome/
 *.drc.json
 *_drc_*.json
 .kicad-push
+
+# FreeCAD backups
+*.FCBak

@@ -23,11 +23,13 @@ The goal is a compact dedicated board for MiLight integration rather than a gene
 
 ## Firmware
 
-This hardware is intended to run the excellent MiLight hub firmware from:
+This board is designed to run [ESPHome](https://esphome.io/) with the [hencou/mi](https://github.com/hencou/esphome_components) external component for MiLight protocol handling. An ESPHome configuration is included in the `esphome/` directory.
 
-- https://github.com/sidoh/esp8266_milight_hub
+For FUT022 (CCT remote/controller) support, the configuration references a fork with additional protocol support:
 
-That project provides the MiLight protocol handling and integrations. This repository focuses on the PCB and schematic needed to host compatible firmware on dedicated hardware.
+- https://github.com/usimd/esphome_components (branch `fut022`)
+
+The firmware provides bidirectional MiLight RF communication and integrates with Home Assistant natively via the ESPHome API.
 
 ## Repository Contents
 
@@ -37,6 +39,8 @@ That project provides the MiLight protocol handling and integrations. This repos
 - `milight-hub-base.kicad_dru`: board design rules
 - `fp-lib-table`: project footprint library table
 - `lib/`: local project footprints and 3D assets
+- `esphome/`: ESPHome firmware configuration
+- `enclosure/`: FreeCAD enclosure design and 3MF export for printing
 
 ## Tooling
 
