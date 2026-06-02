@@ -47,3 +47,7 @@ The firmware provides bidirectional MiLight RF communication and integrates with
 ## License
 
 The hardware design files in this repository are licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal (`CERN-OHL-S-2.0`). See [`LICENSE`](LICENSE).
+
+## AISLER discount
+
+In case you want to build this (or any other) project at AISLER, here's a 10€ discount code: `MakeInEurope-ZDCTN`
